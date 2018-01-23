@@ -40,7 +40,6 @@ words = 'ant baboon badger bat bear beaver camel cat clam cobra cougar coyote cr
 def getRandomWord(wordList):
     # This function returns a random string from the passed list of strings.
 
-
 def displayBoard(missedLetters, correctLetters, secretWord):
     print(HANGMAN_PICS[len(missedLetters)])
     print()
@@ -51,7 +50,6 @@ def displayBoard(missedLetters, correctLetters, secretWord):
     print()
 
     blanks = '_' * len(secretWord)
-
 
 def getGuess(alreadyGuessed):
     # Returns the letter the player entered. This function makes sure the player entered a single letter and not something else.
@@ -64,7 +62,6 @@ def playAgain():
     # This function returns True if the player wants to play again; otherwise, it returns False.
     print('Do you want to play again? (yes or no)')
     return input().lower().startswith('y')
-
 
 print('H A N G M A N')
 missedLetters = ''
